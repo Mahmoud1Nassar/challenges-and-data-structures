@@ -7,5 +7,7 @@
 
 ![maximum_value](/challenges-and-data-structures/whiteboard-challenges/Maximum-Value.png)
 
+
 ## Middle insert Value Challenge
 ![middle_Insertt](/challenges-and-data-structures/whiteboard-challenges/insertMiddle.png)
+
