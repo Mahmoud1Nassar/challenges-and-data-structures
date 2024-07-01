@@ -11,3 +11,7 @@
 ## Middle insert Value Challenge
 ![middle_Insertt](/challenges-and-data-structures/whiteboard-challenges/insertMiddle.png)
 
+
+## Dublicate White board 
+![dublicatewhiteboardscreenshot](/challenges-and-data-structures/whiteboard-challenges/dublicatewhitebaord.png)
+
