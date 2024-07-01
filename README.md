@@ -15,3 +15,5 @@
 ## Dublicate White board 
 ![dublicatewhiteboardscreenshot](/challenges-and-data-structures/whiteboard-challenges/dublicatewhitebaord.png)
 
+## Common Elements
+![CommonElemnts](/challenges-and-data-structures/whiteboard-challenges/CommonElemntss.png)
