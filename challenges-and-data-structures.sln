@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "challenges-and-data-structu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject", "TestProject\TestProject.csproj", "{2ED60099-55D0-4459-8FA9-D254F6C7EF7C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RevrseWords", "RevrseWords\RevrseWords.csproj", "{8DE8E9CC-0EC4-41A4-A205-73120873ADBF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{2ED60099-55D0-4459-8FA9-D254F6C7EF7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2ED60099-55D0-4459-8FA9-D254F6C7EF7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2ED60099-55D0-4459-8FA9-D254F6C7EF7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DE8E9CC-0EC4-41A4-A205-73120873ADBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DE8E9CC-0EC4-41A4-A205-73120873ADBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DE8E9CC-0EC4-41A4-A205-73120873ADBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DE8E9CC-0EC4-41A4-A205-73120873ADBF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
