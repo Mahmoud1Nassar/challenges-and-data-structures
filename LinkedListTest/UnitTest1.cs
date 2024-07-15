@@ -43,5 +43,29 @@ namespace LinkedListTest
                 Assert.Equal(expectedOutput, result);
             }
         }
+
+        [Fact]
+        public void TestNoDuplicates()
+        {
+            // Arrange
+            LinkedList list = new LinkedList();
+            list.Add(5);
+            list.Add(10);
+            list.Add(20);
+            list.Add(30);
+
+            // Act
+            list.RemoveDuplicate();
+
+            // Assert
+            string expectedOutput = "Head -> 5 -> 10 -> 20 -> 30 -> Null";
+            using (var sw = new System.IO.StringWriter())
+            {
+                Console.SetOut(sw);
+                list.PrintList();
+                var result = sw.ToString().Trim();
+                Assert.Equal(expectedOutput, result);
+            }
+        }
     }
 }

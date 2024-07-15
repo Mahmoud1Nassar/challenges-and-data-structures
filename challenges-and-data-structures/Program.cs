@@ -6,7 +6,9 @@ namespace challenges_and_data_structures
     {
         static void Main(string[] args)
         {
-          
+            
+        }
+       
         }
     }
-}
+

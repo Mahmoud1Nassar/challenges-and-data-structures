@@ -85,6 +85,28 @@ namespace challenges_and_data_structures.Data_Structures.LinkedList
             result.Append(" -> Null");
             Console.WriteLine(result.ToString());
         }
+        public void RemoveDuplicate()
+        {
+            Node current = Head;
+
+            while (current != null && current.Next != null)
+            {
+                Node index = current;
+                while (index.Next != null)
+                {
+                    if (current.Data == index.Next.Data)
+                    {
+                        index.Next = index.Next.Next;
+                    }
+                    else
+                    {
+                        index = index.Next;
+                    }
+                }
+                current = current.Next;
+            }
+        }
     }
+
 }
 
