@@ -1,11 +1,11 @@
 ﻿## WhiteBoard
-![White Board For LinkedList](/WhiteBoardLinked.png)
+![White Board For LinkedList](./WhiteBoardLinked.png)
 
 ## Test LinkedList
-![Test UnitX](/TestLinked.png)
+![Test UnitX](./TestLinked.png)
 
 ## Linked Dublicate WhiteBoard
-![White Dublicate](/LinkedDublicatesWhiteBoard.png)
+![White Dublicate](./LinkedDublicatesWhiteBoard.png)
 
 ## Test Dublicate
-![Test UnitX](/TestDublicate.png)
+![Test UnitX](./TestDublicate.png)
