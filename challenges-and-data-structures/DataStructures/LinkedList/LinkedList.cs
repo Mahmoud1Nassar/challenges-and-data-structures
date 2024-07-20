@@ -106,6 +106,35 @@ namespace challenges_and_data_structures.Data_Structures.LinkedList
                 current = current.Next;
             }
         }
+
+        public static LinkedList MergeSortedLists(LinkedList list1 , LinkedList list2 ) { 
+            LinkedList result = new LinkedList();
+            Node current1 = list1.Head;
+            Node current2 = list2.Head;
+
+            while (current1 != null && current2 != null) {
+                if (current1.Data <= current2.Data)
+                {
+                    result.Add(current1.Data);
+                    current1 = current1.Next;
+                }
+                else { 
+                    result.Add(current2.Data);
+                    current2 = current2.Next;
+                }
+            }
+            while (current1 != null) {
+                result.Add(current1.Data);
+                current1 = current1.Next;
+            }
+            while (current2 != null) {
+                result.Add(current2.Data);
+                current2 = current2.Next;
+            }
+
+            return result;
+           
+        }
     }
 
 }
