@@ -9,3 +9,9 @@
 
 ## Test Dublicate
 ![Test UnitX](./TestDublicate.png)
+
+## White Board Merge 
+![Megrge WB ](./WBMerge.png)
+
+## Test Merge 
+![Test Merge](./TestMerge.png)

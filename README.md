@@ -23,3 +23,6 @@
 
 ## LinkedList WhiteBoard
 ![Linked List](/challenges-and-data-structures/whiteboard-challenges/WhiteBoardLinked.png)
+
+## White Board Merging 
+![White Board Merge](/challenges-and-data-structures/whiteboard-challenges/WBMerge.png)
