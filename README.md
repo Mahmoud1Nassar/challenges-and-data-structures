@@ -26,3 +26,6 @@
 
 ## White Board Merging 
 ![White Board Merge](/challenges-and-data-structures/whiteboard-challenges/WBMerge.png)
+
+## White Board Stack and Queue
+![White Board Stack and Queue](/challenges-and-data-structures/whiteboard-challenges/WBSQ.png)

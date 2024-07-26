@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinkedListTest", "LinkedLis
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergeSortedLinkedListsTests", "MergeSortedLinkedListsTests\MergeSortedLinkedListsTests.csproj", "{A6BDADC6-711F-4F6E-982F-91EC17617B7C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackAndQueueTests", "StackAndQueueTests\StackAndQueueTests.csproj", "{F4E54355-E862-45DB-90E3-E137A0CE0B7B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{A6BDADC6-711F-4F6E-982F-91EC17617B7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6BDADC6-711F-4F6E-982F-91EC17617B7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6BDADC6-711F-4F6E-982F-91EC17617B7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4E54355-E862-45DB-90E3-E137A0CE0B7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4E54355-E862-45DB-90E3-E137A0CE0B7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4E54355-E862-45DB-90E3-E137A0CE0B7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4E54355-E862-45DB-90E3-E137A0CE0B7B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
