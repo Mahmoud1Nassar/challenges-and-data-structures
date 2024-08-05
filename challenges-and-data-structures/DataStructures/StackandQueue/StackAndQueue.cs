@@ -68,5 +68,19 @@ namespace challenges_and_data_structures.DataStructures.StackandQueue
         {
             return queueItems.Count == 0;
         }
+
+        // Method to reverse stack using queue
+        public void ReverseStack()
+        {
+            while (!StackIsEmpty())
+            {
+                QueueEnqueue(StackPop());
+            }
+
+            while (!QueueIsEmpty())
+            {
+                StackPush(QueueDequeue());
+            }
+        }
     }
 }

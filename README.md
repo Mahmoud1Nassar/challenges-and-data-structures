@@ -29,3 +29,6 @@
 
 ## White Board Stack and Queue
 ![White Board Stack and Queue](/challenges-and-data-structures/whiteboard-challenges/WBSQ.png)
+
+## Reverse Queue WB
+![Reverse WB](/challenges-and-data-structures/whiteboard-challenges/ReverseWB.png)
