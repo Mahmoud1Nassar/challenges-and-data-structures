@@ -7,3 +7,9 @@
 ![WB reverse](./ReverseWB.png)
 # Test Reverse
 ![Test Reverse](./TestReverse.png)
+
+# WhiteBoard Delete
+![Wb Delete](./WBDel.png)
+
+# Test Delete 
+![Test Delete](./DelTest.png)

@@ -8,8 +8,8 @@ namespace challenges_and_data_structures.DataStructures.StackandQueue
 {
     public class StackAndQueue
     {
-        private LinkedList<int> stackItems = new LinkedList<int>();
-        private LinkedList<int> queueItems = new LinkedList<int>();
+        public LinkedList<int> stackItems = new LinkedList<int>();
+        public LinkedList<int> queueItems = new LinkedList<int>();
 
         // Stack Methods
         public void StackPush(int data)
@@ -82,5 +82,39 @@ namespace challenges_and_data_structures.DataStructures.StackandQueue
                 StackPush(QueueDequeue());
             }
         }
+
+        // Method to delete the middle element of the stack
+        public void DeleteMiddle()
+        {
+            if (StackIsEmpty())
+                throw new InvalidOperationException("Stack is empty");
+
+            int count = stackItems.Count;
+            int middleIndex = count / 2;
+
+            // If the count is even, we need to remove the lower middle element
+            if (count % 2 == 0)
+            {
+                middleIndex--;
+            }
+
+            Stack<int> tempStack = new Stack<int>();
+
+            // Push elements from the original stack to the temp stack until the middle is reached
+            for (int i = 0; i <= middleIndex; i++)
+            {
+                tempStack.Push(StackPop());
+            }
+
+            // Remove the middle element
+            tempStack.Pop();
+
+            // Push the elements back from the temp stack to the original stack
+            while (tempStack.Count > 0)
+            {
+                StackPush(tempStack.Pop());
+            }
+        }
+
     }
 }
