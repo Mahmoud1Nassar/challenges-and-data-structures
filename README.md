@@ -32,3 +32,6 @@
 
 ## Reverse Queue WB
 ![Reverse WB](/challenges-and-data-structures/whiteboard-challenges/ReverseWB.png)
+
+## Delete Queue WB 
+![Delete WhiteBaord](/challenges-and-data-structures/whiteboard-challenges/WBDel.png)

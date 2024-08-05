@@ -103,5 +103,63 @@ namespace StackAndQueueTests
 
             Assert.True(stackAndQueue.StackIsEmpty());
         }
+
+        // Tests for DeleteMiddle functionality
+        [Fact]
+        public void DeleteMiddle_RemovesMiddleElementOfOddSizedStack()
+        {
+            var stackAndQueue = new StackAndQueue();
+            stackAndQueue.StackPush(7);
+            stackAndQueue.StackPush(14);
+            stackAndQueue.StackPush(3);
+            stackAndQueue.StackPush(8);
+            stackAndQueue.StackPush(5);
+
+            stackAndQueue.DeleteMiddle();
+
+            Assert.Equal(4, stackAndQueue.stackItems.Count);
+            Assert.Equal(5, stackAndQueue.StackPop());
+            Assert.Equal(8, stackAndQueue.StackPop());
+            Assert.Equal(14, stackAndQueue.StackPop());
+            Assert.Equal(7, stackAndQueue.StackPop());
+        }
+
+        [Fact]
+        public void DeleteMiddle_RemovesLowerMiddleElementOfEvenSizedStack()
+        {
+            var stackAndQueue = new StackAndQueue();
+            stackAndQueue.StackPush(7);
+            stackAndQueue.StackPush(14);
+            stackAndQueue.StackPush(3);
+            stackAndQueue.StackPush(8);
+
+            stackAndQueue.DeleteMiddle();
+
+            Assert.Equal(3, stackAndQueue.stackItems.Count); // Verify count after removal
+            Assert.Equal(8, stackAndQueue.StackPop());
+            Assert.Equal(14, stackAndQueue.StackPop());
+            Assert.Equal(7, stackAndQueue.StackPop());
+        }
+
+
+
+        [Fact]
+        public void DeleteMiddle_ThrowsExceptionWhenStackIsEmpty()
+        {
+            var stackAndQueue = new StackAndQueue();
+
+            Assert.Throws<InvalidOperationException>(() => stackAndQueue.DeleteMiddle());
+        }
+
+        [Fact]
+        public void DeleteMiddle_RemovesOnlyElementWhenStackHasOneElement()
+        {
+            var stackAndQueue = new StackAndQueue();
+            stackAndQueue.StackPush(10);
+
+            stackAndQueue.DeleteMiddle();
+
+            Assert.True(stackAndQueue.StackIsEmpty());
+        }
     }
 }
