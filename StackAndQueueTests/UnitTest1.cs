@@ -1,6 +1,7 @@
 using challenges_and_data_structures.DataStructures.StackandQueue;
-namespace StackAndQueueTests
+using Xunit;
 
+namespace StackAndQueueTests
 {
     public class StackAndQueueTests
     {
@@ -60,6 +61,47 @@ namespace StackAndQueueTests
             stackAndQueue.QueueEnqueue(10);
             stackAndQueue.QueueDequeue();
             Assert.True(stackAndQueue.QueueIsEmpty());
+        }
+
+        // Tests for ReverseStack functionality
+        [Fact]
+        public void ReverseStack_ReversesStackWithMultipleElements()
+        {
+            var stackAndQueue = new StackAndQueue();
+            stackAndQueue.StackPush(1);
+            stackAndQueue.StackPush(2);
+            stackAndQueue.StackPush(3);
+            stackAndQueue.StackPush(4);
+            stackAndQueue.StackPush(5);
+
+            stackAndQueue.ReverseStack();
+
+            Assert.Equal(1, stackAndQueue.StackPop());
+            Assert.Equal(2, stackAndQueue.StackPop());
+            Assert.Equal(3, stackAndQueue.StackPop());
+            Assert.Equal(4, stackAndQueue.StackPop());
+            Assert.Equal(5, stackAndQueue.StackPop());
+        }
+
+        [Fact]
+        public void ReverseStack_ReversesStackWithOneElement()
+        {
+            var stackAndQueue = new StackAndQueue();
+            stackAndQueue.StackPush(1);
+
+            stackAndQueue.ReverseStack();
+
+            Assert.Equal(1, stackAndQueue.StackPop());
+        }
+
+        [Fact]
+        public void ReverseStack_DoesNothingForEmptyStack()
+        {
+            var stackAndQueue = new StackAndQueue();
+
+            stackAndQueue.ReverseStack();
+
+            Assert.True(stackAndQueue.StackIsEmpty());
         }
     }
 }
