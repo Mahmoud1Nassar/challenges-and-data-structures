@@ -35,3 +35,6 @@
 
 ## Delete Queue WB 
 ![Delete WhiteBaord](/challenges-and-data-structures/whiteboard-challenges/WBDel.png)
+
+## MinQueue WB
+![Min WhiteBaord](/challenges-and-data-structures/whiteboard-challenges/minWB.png)
