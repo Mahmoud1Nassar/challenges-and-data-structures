@@ -1,4 +1,5 @@
 using challenges_and_data_structures.DataStructures.StackandQueue;
+
 using Xunit;
 
 namespace StackAndQueueTests
@@ -160,6 +161,79 @@ namespace StackAndQueueTests
             stackAndQueue.DeleteMiddle();
 
             Assert.True(stackAndQueue.StackIsEmpty());
+        }
+
+
+        [Fact]
+        public void TestGetMin()
+        {
+            var minStack = new MinStack();
+            minStack.Push(15);
+            minStack.Push(7);
+            minStack.Push(12);
+            minStack.Push(3);
+            Assert.Equal(3, minStack.GetMin());
+
+            minStack.Pop();
+            Assert.Equal(7, minStack.GetMin());
+        }
+
+        [Fact]
+        public void TestPopAndMin()
+        {
+            var minStack = new MinStack();
+            minStack.Push(10);
+            minStack.Push(20);
+            minStack.Push(5);
+            minStack.Push(15);
+
+            minStack.Pop();
+            Assert.Equal(5, minStack.GetMin());
+
+            minStack.Pop();
+            Assert.Equal(10, minStack.GetMin());
+
+            minStack.Pop();
+            Assert.Equal(10, minStack.GetMin());
+        }
+
+        [Fact]
+        public void TestPushAndMin()
+        {
+            var minStack = new MinStack();
+            minStack.Push(10);
+            Assert.Equal(10, minStack.GetMin());
+
+            minStack.Push(20);
+            Assert.Equal(10, minStack.GetMin());
+
+            minStack.Push(5);
+            Assert.Equal(5, minStack.GetMin());
+        }
+
+        [Fact]
+        public void TestIsEmpty()
+        {
+            var minStack = new MinStack();
+            Assert.True(minStack.IsEmpty());
+
+            minStack.Push(10);
+            Assert.False(minStack.IsEmpty());
+
+            minStack.Pop();
+            Assert.True(minStack.IsEmpty());
+        }
+
+        [Fact]
+        public void TestTop()
+        {
+            var minStack = new MinStack();
+            minStack.Push(10);
+            minStack.Push(20);
+            Assert.Equal(20, minStack.Top());
+
+            minStack.Pop();
+            Assert.Equal(10, minStack.Top());
         }
     }
 }
