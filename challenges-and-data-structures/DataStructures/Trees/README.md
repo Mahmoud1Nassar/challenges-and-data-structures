@@ -1,4 +1,4 @@
 ﻿# Tree BT Test
-![tree Test](/TreeTest.png)
+![tree Test](./TreeTest.png)
 # Tree WhiteBaord
-![WB](/WBTreeBT.png)
+![WB](./WBTreeBT.png)
