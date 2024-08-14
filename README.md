@@ -38,3 +38,6 @@
 
 ## MinQueue WB
 ![Min WhiteBaord](/challenges-and-data-structures/whiteboard-challenges/minWB.png)
+
+## Tree BT WB
+![Tree WB](/challenges-and-data-structures/whiteboard-challenges/WBTreeBT.png)
