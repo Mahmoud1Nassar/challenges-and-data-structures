@@ -2,90 +2,64 @@ using challenges_and_data_structures.DataStructures.Trees;
 using System.Collections.Generic;
 using Xunit;
 
-public class TreeTests
+namespace TreeTests
 {
-    [Fact]
-    public void TestPreOrderTraversal()
+    public class TreeMirrorTests
     {
-        TreeImplementation bst = new TreeImplementation();
-        bst.Add(10);
-        bst.Add(5);
-        bst.Add(15);
-        bst.Add(7);
+        [Fact]
+        public void TestMirrorTreeAndInOrderTraversal()
+        {
+            // Arrange
+            BinaryTree Btree = new BinaryTree();
+            Btree.Root = new BinaryTree.Node(4);
+            Btree.Root.Left = new BinaryTree.Node(8);
+            Btree.Root.Right = new BinaryTree.Node(7);
+            Btree.Root.Left.Left = new BinaryTree.Node(12);
+            Btree.Root.Left.Right = new BinaryTree.Node(9);
 
-        List<int> result = new List<int>();
-        bst.PreOrder(bst.Root, result);
+            // Act - Inorder traversal before mirroring
+            List<int> originalInorder = Btree.InorderTraversal();
+            TreeMirror.Mirror(Btree.Root);  // Perform the mirror operation
+            List<int> mirroredInorder = Btree.InorderTraversal();
 
-        Assert.Equal(new List<int> { 10, 5, 7, 15 }, result);
-    }
+            // Assert - Verify original inorder traversal
+            Assert.Equal(new List<int> { 12, 8, 9, 4, 7 }, originalInorder);
 
-    [Fact]
-    public void TestInOrderTraversal()
-    {
-        TreeImplementation bst = new TreeImplementation();
-        bst.Add(10);
-        bst.Add(5);
-        bst.Add(15);
-        bst.Add(7);
+            // Assert - Verify mirrored inorder traversal
+            Assert.Equal(new List<int> { 7, 4, 9, 8, 12 }, mirroredInorder);
+        }
 
-        List<int> result = new List<int>();
-        bst.InOrder(bst.Root, result);
+        [Fact]
+        public void TestMirrorSingleNodeTree()
+        {
+            // Arrange
+            BinaryTree Btree = new BinaryTree();
+            Btree.Root = new BinaryTree.Node(1);
 
-        Assert.Equal(new List<int> { 5, 7, 10, 15 }, result);
-    }
+            // Act - Inorder traversal before and after mirroring
+            List<int> originalInorder = Btree.InorderTraversal();
+            TreeMirror.Mirror(Btree.Root);
+            List<int> mirroredInorder = Btree.InorderTraversal();
 
-    [Fact]
-    public void TestPostOrderTraversal()
-    {
-        TreeImplementation bst = new TreeImplementation();
-        bst.Add(10);
-        bst.Add(5);
-        bst.Add(15);
-        bst.Add(7);
+            // Assert - Inorder traversal should remain the same
+            Assert.Equal(new List<int> { 1 }, originalInorder);
+            Assert.Equal(new List<int> { 1 }, mirroredInorder);
+        }
 
-        List<int> result = new List<int>();
-        bst.PostOrder(bst.Root, result);
+        [Fact]
+        public void TestMirrorEmptyTree()
+        {
+            // Arrange
+            BinaryTree Btree = new BinaryTree();
 
-        Assert.Equal(new List<int> { 7, 5, 15, 10 }, result);
-    }
+            // Act - Inorder traversal before and after mirroring
+            List<int> originalInorder = Btree.InorderTraversal();
+            TreeMirror.Mirror(Btree.Root);
+            List<int> mirroredInorder = Btree.InorderTraversal();
 
-    [Fact]
-    public void TestAddNode()
-    {
-        TreeImplementation bst = new TreeImplementation();
-        bst.Add(10);
-        bst.Add(5);
-        bst.Add(15);
-
-        Assert.True(bst.Contains(10));
-        Assert.True(bst.Contains(5));
-        Assert.True(bst.Contains(15));
-    }
-
-    [Fact]
-    public void TestContainsNode()
-    {
-        TreeImplementation bst = new TreeImplementation();
-        bst.Add(10);
-        bst.Add(5);
-        bst.Add(15);
-
-        Assert.True(bst.Contains(10));
-        Assert.False(bst.Contains(7));
-    }
-
-    [Fact]
-    public void TestRemoveNode()
-    {
-        TreeImplementation bst = new TreeImplementation();
-        bst.Add(10);
-        bst.Add(5);
-        bst.Add(15);
-        bst.Add(7);
-
-        bst.Remove(5);
-
-        Assert.False(bst.Contains(5));
-        Assert.True(bst.Contains(7));
+            // Assert - Inorder traversal should be empty
+            Assert.Empty(originalInorder);
+            Assert.Empty(mirroredInorder);
+        }
     }
 }

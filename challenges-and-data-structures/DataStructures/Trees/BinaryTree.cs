@@ -1,26 +1,29 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace challenges_and_data_structures.DataStructures.Trees
 {
     public class BinaryTree
     {
+        public class Node
+        {
+            public int Data { get; set; }
+            public Node Left { get; set; }
+            public Node Right { get; set; }
+
+            public Node(int data)
+            {
+                Data = data;
+                Left = null;
+                Right = null;
+            }
+        }
+
         public Node Root { get; set; }
 
         public BinaryTree()
         {
             Root = null;
-        }
-
-        public void PreOrder(Node node, List<int> result)
-        {
-            if (node == null) return;
-            result.Add(node.Data);
-            PreOrder(node.Left, result);
-            PreOrder(node.Right, result);
         }
 
         public void InOrder(Node node, List<int> result)
@@ -31,12 +34,11 @@ namespace challenges_and_data_structures.DataStructures.Trees
             InOrder(node.Right, result);
         }
 
-        public void PostOrder(Node node, List<int> result)
+        public List<int> InorderTraversal()
         {
-            if (node == null) return;
-            PostOrder(node.Left, result);
-            PostOrder(node.Right, result);
-            result.Add(node.Data);
+            List<int> result = new List<int>();
+            InOrder(Root, result);
+            return result;
         }
 
         public void Print(Node node, int space = 0, int indent = 5)

@@ -41,3 +41,6 @@
 
 ## Tree BT WB
 ![Tree WB](/challenges-and-data-structures/whiteboard-challenges/WBTreeBT.png)
+
+## Mirror WB
+![Tree WB](/challenges-and-data-structures/whiteboard-challenges/MirrorWB.png)
