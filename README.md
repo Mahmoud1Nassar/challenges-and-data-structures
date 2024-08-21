@@ -44,3 +44,6 @@
 
 ## Mirror WB
 ![Tree WB](/challenges-and-data-structures/whiteboard-challenges/MirrorWB.png)
+
+## Second max value WB
+![SMWB](/challenges-and-data-structures/whiteboard-challenges/WBSMT.png)
