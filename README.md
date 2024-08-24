@@ -44,3 +44,9 @@
 
 ## Mirror WB
 ![Tree WB](/challenges-and-data-structures/whiteboard-challenges/MirrorWB.png)
+
+## Second max value WB
+![SMWB](/challenges-and-data-structures/whiteboard-challenges/WBSMT.png)
+
+## Sum Leaf WB
+![LSWB](/challenges-and-data-structures/whiteboard-challenges/LSWB.png)
