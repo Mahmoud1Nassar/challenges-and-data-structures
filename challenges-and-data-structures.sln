@@ -17,7 +17,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StackAndQueueTests", "Stack
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TreeTests", "TreeTests\TreeTests.csproj", "{F15E0D2E-AA3E-4312-8804-EB461261B518}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecondMaxValueTests", "SecondMaxValueTests\SecondMaxValueTests.csproj", "{554ED30C-5EEE-4AB6-95FC-EE9BA58CA44A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SecondMaxValueTests", "SecondMaxValueTests\SecondMaxValueTests.csproj", "{554ED30C-5EEE-4AB6-95FC-EE9BA58CA44A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeafSumCalculatorTests", "LeafSumCalculatorTests\LeafSumCalculatorTests.csproj", "{E5504FF0-9AE2-407B-ADA1-F8CD691BDF9C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{554ED30C-5EEE-4AB6-95FC-EE9BA58CA44A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{554ED30C-5EEE-4AB6-95FC-EE9BA58CA44A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{554ED30C-5EEE-4AB6-95FC-EE9BA58CA44A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5504FF0-9AE2-407B-ADA1-F8CD691BDF9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5504FF0-9AE2-407B-ADA1-F8CD691BDF9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5504FF0-9AE2-407B-ADA1-F8CD691BDF9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5504FF0-9AE2-407B-ADA1-F8CD691BDF9C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
