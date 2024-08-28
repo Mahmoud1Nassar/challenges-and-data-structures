@@ -50,3 +50,6 @@
 
 ## Sum Leaf WB
 ![LSWB](/challenges-and-data-structures/whiteboard-challenges/LSWB.png)
+
+## LLWB
+![LLWB](/challenges-and-data-structures/whiteboard-challenges/LLWB.png)
