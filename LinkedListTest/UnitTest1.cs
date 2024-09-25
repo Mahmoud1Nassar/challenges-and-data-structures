@@ -67,5 +67,45 @@ namespace LinkedListTest
                 Assert.Equal(expectedOutput, result);
             }
         }
+
+        [Fact]
+        public void TestRotateByZero()
+        {
+            LinkedList list = new LinkedList();
+            list.Add(1);
+            list.Add(2);
+            list.Add(3);
+
+            list.RotateLeft(0);
+            Assert.Equal("Head -> 1 -> 2 -> 3 -> Null", list.ToString());
+        }
+
+        [Fact]
+        public void TestRotateByMoreThanLength()
+        {
+            LinkedList list = new LinkedList();
+            list.Add(10);
+            list.Add(20);
+            list.Add(30);
+            list.Add(40);
+            list.Add(50);
+
+            list.RotateLeft(7); // k > length, 7 % 5 = 2
+            Assert.Equal("Head -> 30 -> 40 -> 50 -> 10 -> 20 -> Null", list.ToString());
+        }
+
+        [Fact]
+        public void TestNormalRotate()
+        {
+            LinkedList list = new LinkedList();
+            list.Add(1);
+            list.Add(2);
+            list.Add(3);
+            list.Add(4);
+            list.Add(5);
+
+            list.RotateLeft(2);
+            Assert.Equal("Head -> 3 -> 4 -> 5 -> 1 -> 2 -> Null", list.ToString());
+        }
     }
 }

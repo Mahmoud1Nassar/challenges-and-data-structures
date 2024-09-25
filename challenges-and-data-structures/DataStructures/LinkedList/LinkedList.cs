@@ -135,6 +135,42 @@ namespace challenges_and_data_structures.Data_Structures.LinkedList
             return result;
            
         }
+        public void RotateLeft(int k)
+        {
+          
+            if (Head == null || k == 0)
+            {
+                return; 
+            }
+
+            int length = 1;
+            Node current = Head;
+            while (current.Next != null)
+            {
+                length++;
+                current = current.Next;
+            }
+
+            k = k % length;
+            if (k == 0)
+            {
+                return; 
+            }
+
+            current.Next = Head;
+
+            int newTailPosition = length - k;
+            Node newTail = Head;
+            for (int i = 1; i < newTailPosition; i++)
+            {
+                newTail = newTail.Next;
+            }
+
+            
+            Head = newTail.Next;
+            newTail.Next = null;
+        }
+
     }
 
 }
