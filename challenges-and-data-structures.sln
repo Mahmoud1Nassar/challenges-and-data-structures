@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryTreeRightViewTests", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaxLevelNodesTest", "MaxLevelNodesTest\MaxLevelNodesTest.csproj", "{B8A6D3D1-ED4F-4E5D-A092-810D80EF2B6B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimumDepthTests", "MinimumDepthTests\MinimumDepthTests.csproj", "{D9B43340-60C6-4FBE-9DD5-93A8C9898E68}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{B8A6D3D1-ED4F-4E5D-A092-810D80EF2B6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B8A6D3D1-ED4F-4E5D-A092-810D80EF2B6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B8A6D3D1-ED4F-4E5D-A092-810D80EF2B6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9B43340-60C6-4FBE-9DD5-93A8C9898E68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9B43340-60C6-4FBE-9DD5-93A8C9898E68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9B43340-60C6-4FBE-9DD5-93A8C9898E68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9B43340-60C6-4FBE-9DD5-93A8C9898E68}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
